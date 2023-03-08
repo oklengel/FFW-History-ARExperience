@@ -6,9 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@jeromeetienne/ar.js@2.3.2/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
-    <a-scene embedded arjs="sourceType: webcam;">
+    <a-scene embedded arjs>  
+      <a-box position="0 0.5 0" material="color: red;"></a-box>
       <a-marker preset="custom" type="pattern" url="https://raw.githubusercontent.com/oklengel/FFW-History-ARExperience/main/content/images/umzug.patt">
-        <a-box position="0 0.5 0" material="color: red;"></a-box>
+      
       </a-marker>
     </a-scene>
   </body>
